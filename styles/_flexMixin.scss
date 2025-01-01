@@ -1,0 +1,29 @@
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+@mixin borderAndWidth{
+    border-bottom-left-radius: 30px!important;
+    border-bottom-right-radius: 30px!important;
+    border-top-left-radius: 0px!important;
+    border-top-right-radius: 0px!important;
+    margin:5em auto;
+}
+@mixin widthAndHeight($width,
+    $max-width:auto,
+    $height:auto,
+    $margin:0,
+    $padding:auto,
+    $borderRadius:0){
+        
+    width:$width;
+    max-width:$max-width;
+    height:$height;
+    margin:$margin;
+    padding:$padding;
+    border-radius: $borderRadius;
+}
+

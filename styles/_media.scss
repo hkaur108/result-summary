@@ -1,0 +1,48 @@
+@use './flexMixin' as c;
+@import './colors';
+@import './button';
+
+@media only screen and (max-width: 600px) {
+    .main-container {
+      @include c.flex;
+      width: 100%;
+      max-width: 325px!important;
+      box-shadow: 5px 5px 5px 5px lightgray;
+      margin:2rem 0!important;
+      .top-container {
+        width: 100%;
+        @include c.borderAndWidth;
+        .desc {
+          font-size:1rem;
+          margin:1em auto;
+        }
+        }
+        .bottom-container {
+          width:100%;
+          max-width: 325px;
+          background-color: $White;
+          margin:1em auto;
+          padding:0 .5rem;
+          .summary-heading,h1 {
+            color:$Darkgrayblue;
+            font-size: 1.50rem;
+            padding:0 0 0 0.75em;
+          }
+        ul{
+          width:100%;
+          margin:0 .5em 0 0;
+          padding:1em;
+          li{
+            width:100%;
+            padding:1em;
+            margin:0 0 1em 0;
+            img{
+              display:inline-block;
+              width:2em;
+            }
+          }
+        }
+      }
+    } 
+  }
+  

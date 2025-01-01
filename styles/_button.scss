@@ -1,0 +1,15 @@
+button {
+    width: 100%;
+    display: block;
+    transition: all 0.4s ease-in-out;
+    background-color: $Darkgrayblue;
+    color: #fff;
+    padding: .8rem .3rem;
+    border-radius: 30px;
+    margin: 2em auto;
+    font-size: 1rem;
+    &:hover{
+        background-color: $lightSlateBlue;
+        cursor: pointer;
+    }
+  }
